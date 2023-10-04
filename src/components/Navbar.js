@@ -30,7 +30,6 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-
       <div>
         <hr className="nav-bar-line" />
       </div>
