@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 import Navbar from './components/Navbar';
-import Rockets from './components/Rocket';
+import Rockets from './components/Rockets';
 
 function App() {
   return (
