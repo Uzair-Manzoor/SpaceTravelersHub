@@ -1,1 +1,1 @@
-**/*.js
+eslint src/App.js src/components/missions.js
