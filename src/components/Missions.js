@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions } from '../redux/missionSlice';
 import '../styles/missions.css';
+import '../styles/index.css';
 import MissionCard from './missionCard';
 
 const Missions = () => {
