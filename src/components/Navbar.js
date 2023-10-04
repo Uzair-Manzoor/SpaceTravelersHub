@@ -19,6 +19,7 @@ const Navbar = () => {
         <NavLink className={(nav) => handleActive(nav)} to="/react-capstone/missions">
           Missions
         </NavLink>
+        <span className="line">|</span>
         <NavLink id="border" className={(nav) => handleActive(nav)} to="/react-capstone/myprofile">
           My Profile
         </NavLink>
