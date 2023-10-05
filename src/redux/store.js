@@ -1,10 +1,14 @@
-import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import rocketSlice from './rocketSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
+import MissionSlice from './missionSlice';
+import rocketsReducer from './rocketSlice';
 
-const reducer = combineReducers({
-  rockets: rocketSlice,
-});
 const store = configureStore({
-  reducer,
+  reducer: {
+    rockets: rocketsReducer,
+    missions: MissionSlice,
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
+
 export default store;
