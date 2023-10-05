@@ -32,7 +32,7 @@ const MyProfile = () => {
     rocketList = (
       <ul className="rockets-list">
         {reservedRockets.map((rocket) => (
-          <li key={rocket.id}>{rocket.name}</li>
+          <li key={rocket.id}>{rocket.rocketName}</li>
         ))}
       </ul>
     );
