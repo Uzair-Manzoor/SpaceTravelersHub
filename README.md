@@ -94,8 +94,8 @@ Clone this repository to your desired folder:
 
 👤 **Adeshina Adenuga**
 
-- GitHub: [@SabaAhmad404](https://github.com/nuga0909)
-- LinkedIn: [@saba ahmad](linkedin.com/in/adeshina-adenuga-947909294)
+- GitHub: [@nuga0909](https://github.com/nuga0909)
+- LinkedIn: [@nuga0909](linkedin.com/in/adeshina-adenuga-947909294)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
