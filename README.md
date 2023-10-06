@@ -1,91 +1,102 @@
-
 <a name="readme-top"></a>
-
-<!-- TABLE OF CONTENTS -->
+<div align="center">
+  <h3><b>Space-Hub</b></h3>
+</div>
 
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 Space Travelers' Hub](#-Space-Travelers'-Hub)
-  - [🛠 Built With ](#-built-with-)
-  - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-  - [🔭 Future Features ](#-future-features-)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+# 📖 Space-Hub <a name="about-project"></a>
 
-# 📖 Space Travelers' Hub<a name="about-project"></a>
-
-**Space Travelers' Hub**
- Space Travelers' Hub is a website that allows the user to take a fictional tour across the space. The user can choose a rocket from our catalog interface, and reserve it. Also, the user can see recent special missions and join them. Finally, the user will be able to keep track of all the rockets and mission they are subscribed to.
+> **Space-Hub** is a one-stop platform for all your space exploration needs. With our website, you can select the rocket and mission of your choice, and it will be displayed in your profile section for easy access. Built with the latest technologies such as React and Redux, Space Hub offers a seamless and intuitive experience for space enthusiasts and professionals alike. Whether you're looking to track a specific mission or explore the vast depths of space, Space Hub is the perfect tool for your journey.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-    React
-    Redux
-    React-Router
-    Javascript(ES6)
-    Webpack
+### Tech Stack <a name="tech-stack"></a>
+
+> This project use React.js & Redux.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/"></a>React</li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>   
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+- Ability to select rocket and mission.
+- Display of selected information in profile section.
+- Built with React and Redux for a seamless and intuitive experience.
+- Ideal for both space enthusiasts and professionals.
+- Easy tracking of specific missions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
--  [Live Link](########)
+- [Live Demo Link](https://glistening-sable-cec9a6.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-## 💻 Getting Started <a name="getting-started"></a>
-
-- Create a local directory that you want to clone the repository.
-
-- Open the command prompt in the created directory.
-
-- On the terminal run this command `git clone`
-
-- Go to the repository folder using command prompt `cd space-travelers-hub`
-
-- Install the dev dependencies for linters run `npm install`.
-
-- Start the program by running the command `npm start`.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Prerequisites
-
-In order to run this project you need:
-
--Any broswer
-
-- knowledge of ES6 modules
-- familiarity with basic git commands
-- working knowledge of webpack
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 💻 Getting Started with Space-Hub <a name="getting-started"></a>
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this [repository](https://github.com/Uzair-Manzoor/react-capstone) to your desired folder:
 
-- Open the command prompt in the created directory.
+```sh
+  cd my-folder
+  git clone git@github.com:gauravgangwarweb/Space-Hub.git 
+  cd Space-Hub
+```
 
-- On the terminal run this command git clone https://github.com/Uzair-Manzoor/react-capstone
+### Install
 
-- Go to the repository folder using command prompt cd Space-Travelers-Hub
+Install this project with:
 
-- Install the dev dependencies for linters run npm install.
+```sh
+  npm install
+```
+
+### Start
+
+To start the application, run the following command
+
+```sh
+  npm start
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  npm test
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Author -->
-
-👤 **Authors**
-
+## 👥 Authors <a name="authors"></a>
 👤 **Uzair Manzoor**
 
 - GitHub: [@Uzair Manzoor](https://github.com/Uzair-Manzoor)
@@ -99,10 +110,10 @@ Clone this repository to your desired folder:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🔭 Key Features <a name="future-features"></a>
+## 🔭 Future Features <a name="future-features"></a>
 
-  -  Using redux for state management
-  -  react router dom 
+- Dragon Capsule information and updates section
+- "About the Creators" section with information about the team behind Space Hub.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,10 +127,18 @@ Feel free to check the [issues page](https://github.com/Uzair-Manzoor/react-caps
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+If you like this project, Give a ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- Project from [Microverse](https://www.microverse.org/?grsf=i6yi2m) React & Redux module
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
