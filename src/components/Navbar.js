@@ -9,7 +9,7 @@ const Navbar = () => {
     <header className="navbar">
       <div className="logoInfo">
         <img src={planetImg} alt="" />
-        <h1 className="navHeader">Space Traveller&apos;s Hub</h1>
+        <h1 className="navHeader">Space Travellers&apos; Hub</h1>
       </div>
       <div className="links">
         <NavLink to="/" exact activeClassName="active">
