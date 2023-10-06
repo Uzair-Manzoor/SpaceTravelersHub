@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import planetImg from '../assets/images/planet.png';
-import '../styles/App.css';
 import '../styles/rocket.css';
 
 const Navbar = () => {
