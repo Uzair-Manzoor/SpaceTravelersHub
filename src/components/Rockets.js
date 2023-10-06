@@ -1,25 +1,65 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import RocketCard from './RocketCard';
+import React from 'react';
+import { render } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import configureMockStore from 'redux-mock-store';
+import Rockets from '../components/Rockets';
 import { fetchRockets } from '../redux/rocketSlice';
 
-function Rockets() {
-  const dispatch = useDispatch();
-  const rockets = useSelector((state) => state.rockets.rockets);
-  useEffect(() => {
-    if (rockets.length === 0) {
-      dispatch(fetchRockets());
-    }
-  }, [dispatch, rockets.length]);
+const mockStore = configureMockStore();
+jest.mock('../redux/rocketSlice', () => ({
+  fetchRockets: jest.fn(),
+}));
 
-  return (
-    <div className="data-container">
-      <ul className="map">
-        {rockets.map((rocket) => (
-          <RocketCard key={rocket.id} rocket={rocket} />
-        ))}
-      </ul>
-    </div>
-  );
-}
-export default Rockets;
+describe('Rockets Component', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('should dispatch fetchRockets if rockets is empty', () => {
+    const store = mockStore({
+      rockets: {
+        rockets: [],
+      },
+    });
+
+    render(
+      <Provider store={store}>
+        <Rockets />
+      </Provider>
+    );
+
+    expect(fetchRockets).toHaveBeenCalled();
+  });
+
+  it('should not dispatch fetchRockets if rockets is not empty', () => {
+    const store = mockStore({
+      rockets: {
+        rockets: [{ id: 1, rocketName: 'Falcon' }],
+      },
+    });
+
+    render(
+      <Provider store={store}>
+        <Rockets />
+      </Provider>
+    );
+
+    expect(fetchRockets).not.toHaveBeenCalled();
+  });
+
+  it('renders RocketCard for each rocket', () => {
+    const store = mockStore({
+      rockets: {
+        rockets: [{ id: 1, rocketName: 'Falcon' }],
+      },
+    });
+
+    const { getByText } = render(
+      <Provider store={store}>
+        <Rockets />
+      </Provider>
+    );
+
+    expect(getByText('Falcon')).toBeInTheDocument(); // Assuming that the RocketCard displays the rocket name.
+  });
+});
