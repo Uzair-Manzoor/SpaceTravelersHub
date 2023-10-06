@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import MyProfile from './components/myProfile';
 import Missions from './components/Missions';
 import Rockets from './components/Rockets';
-import './styles/App.css';
 
 function App() {
   return (
