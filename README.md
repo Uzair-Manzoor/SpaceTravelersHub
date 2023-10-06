@@ -106,7 +106,7 @@ To run tests, run the following command:
 👤 **Adeshina Adenuga**
 
 - GitHub: [@nuga0909](https://github.com/nuga0909)
-- LinkedIn: [@nuga0909](linkedin.com/in/adeshina-adenuga-947909294)
+- LinkedIn: [@nuga0909](https://www.linkedin.com/in/adeshina-adenuga-947909294/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
