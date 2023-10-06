@@ -66,7 +66,7 @@ Clone this [repository](https://github.com/Uzair-Manzoor/react-capstone) to your
 
 ```sh
   cd my-folder
-  git clone git@github.com:gauravgangwarweb/Space-Hub.git 
+  git https://github.com/Uzair-Manzoor/react-capstone 
   cd Space-Hub
 ```
 
