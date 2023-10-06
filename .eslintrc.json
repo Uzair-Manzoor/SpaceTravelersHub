@@ -12,7 +12,11 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
   "plugins": ["react"],
   "rules": {
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
@@ -21,10 +25,14 @@
     "no-shadow": "off",
 
     // Allow file extensions in import statements
-    "import/extensions": ["error", "always", {
-      "js": "never",
-      "jsx": "never"
-    }]
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        "js": "never",
+        "jsx": "never"
+      }
+    ]
   },
   "overrides": [
     {
@@ -34,8 +42,5 @@
       "rules": { "no-param-reassign": ["error", { "props": false }] }
     }
   ],
-  "ignorePatterns": [
-    "dist/",
-    "build/"
-  ]
+  "ignorePatterns": ["dist/", "build/"]
 }
