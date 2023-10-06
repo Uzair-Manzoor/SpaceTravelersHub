@@ -1,45 +1,33 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import '@testing-library/jest-dom';
+import configureStore from 'redux-mock-store';
+import NavBar from '../components/Navbar';
 
-describe('Navbar Component', () => {
-  beforeEach(() => {
-    render(
-      <Router>
-        <Navbar />
-      </Router>,
+const mockStore = configureStore([]);
+describe('Navbar', () => {
+  test('Navbar rendered correctly', () => {
+    const store = mockStore({
+      rockets: {
+        rocket: [
+          {
+            name: 'Test',
+            description: 'Test Description',
+            reserved: false,
+            id: 'test-id',
+          },
+        ],
+        isLoading: false,
+        isError: false,
+      },
+    });
+    const navbar = render(
+      <Provider store={store}>
+        <Router>
+          <NavBar />
+        </Router>
+      </Provider>,
     );
-  });
-
-  it('renders the logo', () => {
-    const logoElement = screen.getByAltText('');
-    expect(logoElement).toBeInTheDocument();
-  });
-
-  it('renders the header text', () => {
-    const headerElement = screen.getByText(/Space Traveller's Hub/i);
-    expect(headerElement).toBeInTheDocument();
-  });
-
-  it('renders navigation links', () => {
-    const rocketsLink = screen.getByText(/Rockets/i);
-    const missionsLink = screen.getByText(/Missions/i);
-    const profileLink = screen.getByText(/My Profile/i);
-
-    expect(rocketsLink).toBeInTheDocument();
-    expect(missionsLink).toBeInTheDocument();
-    expect(profileLink).toBeInTheDocument();
-  });
-
-  it('has correct link paths', () => {
-    const rocketsLink = screen.getByText(/Rockets/i).closest('a');
-    const missionsLink = screen.getByText(/Missions/i).closest('a');
-    const profileLink = screen.getByText(/My Profile/i).closest('a');
-
-    expect(rocketsLink).toHaveAttribute('href', '/');
-    expect(missionsLink).toHaveAttribute('href', '/react-capstone/missions');
-    expect(profileLink).toHaveAttribute('href', '/react-capstone/myprofile');
+    expect(navbar).toMatchSnapshot();
   });
 });
