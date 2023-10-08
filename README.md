@@ -28,9 +28,9 @@
 
 > **Space-Hub** is a one-stop platform for all your space exploration needs. With our website, you can select the rocket and mission of your choice, and it will be displayed in your profile section for easy access. Built with the latest technologies such as React and Redux, Space Hub offers a seamless and intuitive experience for space enthusiasts and professionals alike. Whether you're looking to track a specific mission or explore the vast depths of space, Space Hub is the perfect tool for your journey.
 
-![image](https://github.com/Uzair-Manzoor/SpaceTravelersHub/blob/tests/src/assets/images/Rocketsupdated.png?raw=true)
-![image](https://github.com/Uzair-Manzoor/SpaceTravelersHub/blob/tests/src/assets/images/Missionsupdated.png?raw=true)
-![image](https://github.com/Uzair-Manzoor/SpaceTravelersHub/blob/tests/src/assets/images/MyProfileUpdated.png?raw=true)
+![image](https://github.com/Uzair-Manzoor/SpaceTravelersHub/blob/main/src/assets/images/Rocketsupdated.png?raw=true)
+![image](https://github.com/Uzair-Manzoor/SpaceTravelersHub/blob/main/src/assets/images/Missionsupdated.png?raw=true)
+![image](https://github.com/Uzair-Manzoor/SpaceTravelersHub/blob/main/src/assets/images/MyProfileUpdated.png?raw=true)
 
 ## 🛠 Built With <a name="built-with"></a>
 
