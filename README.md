@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://space-travelers-ol7p694w1-uzair-manzoor.vercel.app/)
+- [Live Demo Link](https://space-travelers-y8rssn7qf-uzair-manzoor.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
