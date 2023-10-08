@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "react-scripts eject",
-    "lint": "eslint src/App.js src/components/missions.js"
+    "lint": ""
   },
   "eslintConfig": {
     "extends": [

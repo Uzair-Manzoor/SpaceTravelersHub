@@ -7,7 +7,7 @@
 
 body {
   padding: 2%;
-  background-color: #f5f6fa;
+  background-color: #fffdef;
 }
 
 .nav-bar {
@@ -73,18 +73,20 @@ body {
 
 .rocket-images {
   width: 250px;
+  border: ridge 5px hsl(183, 72%, 37%);
+  border-radius: 12px;
 }
 
 .rocket-name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
-  color: rgb(0, 0, 0);
+  color: hsl(183, 72%, 37%);
 }
 
 .paragraph {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  color: #121212;
+  color: #757575;
 }
 
 .reserved {
@@ -102,7 +104,7 @@ body {
 .rocket-button {
   height: 2.3rem;
   width: 8rem;
-  background-color: hsl(211, 100%, 50%);
+  background-color: hsl(183, 72%, 37%);;
   border-radius: 3px 3px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -110,13 +112,21 @@ body {
   border: none;
 }
 
+.rocket-button:hover {
+  background-color: hsl(183, 72%, 37%);;
+  height: 2.5rem;
+  width: 8.1rem;
+  font-weight: bolder;
+}
+
 .cancel {
   height: 2.3rem;
-  width: 8rem;
-  background-color: #ffff;
+  width: 8.5rem;
+  background-color: hsl(180, 38%, 92%);
   border-radius: 3px 3px;
-  color: black;
+  color: hsl(4, 100%, 53%);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
-  border: 1px solid black;
+  font-weight: bolder;
+  border: 1px solid hsl(4, 75%, 51%);
 }
